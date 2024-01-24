@@ -25,5 +25,9 @@ def sorai(lista):
     print(f"\nAz adatok sorainak hossza: {len(lista)}")
 
 def legrovidebb(lista):
-    # print(f"\nA lergrövidebb film címe: {}")
-    pass
+    minindex=0
+    for i in range(0, len(lista),1):
+        if lista[i].perc<lista[minindex].perc:
+            minindex=i
+
+    print(f"\nA lergrövidebb film címe: {lista[minindex].cim}")
